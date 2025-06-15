@@ -18,32 +18,33 @@
             <img src="./images/r2.png" alt="">
             <img src="./images/r3.png" alt="">
             <img src="./images/r4.png" alt="">
-            <!-- <img src="./images/r5.jpg" alt=""> -->
             <img src="./images/r6.png" alt="">
             <img src="./images/r7.png" alt="">
-             <img src="./images/r8.png" alt="">
+            <img src="./images/r8.png" alt="">
             <img src="./images/r9.png" alt="">
             <img src="./images/r10.png" alt=""> 
             <p>ABHIJEET KUMAR</p>
         </div>
         <div id="ground"></div>
-        
     </div>
     
-    <div id="music-container"></div>
-    <!-- <div id="canva">
-        <canvas id="canvas"></canvas>
-    </div> -->
+    <!-- Volume Controls in Upper Right -->
+    <div id="volume-controls">
+        <button id="playBtn">▶</button>
+        <div class="volume-wrapper">
+            <input type="range" id="volumeSlider" min="0" max="1" step="0.1" value="1">
+            <button id="muteBtn">🔊</button>
+        </div>
+    </div>
 
-    <!-- Audio tự động phát -->
-
-    <div id="design-text"><h1>Abhijeet Kumar</h1></div>
-    <audio id="myAudio" autoplay loop playsinline>
+    <!-- <div id="design-text"><h1>Abhijeet Kumar</h1></div> -->
+    <audio id="myAudio" loop playsinline>
         <source src="music/setlove.mp3" type="audio/mpeg">
         <source src="music/setlove.ogg" type="audio/ogg">
     </audio>
 
     <script src="main.js"></script>
+
 
     <script>
         window.onload = function() {
